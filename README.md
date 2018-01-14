@@ -4,7 +4,7 @@ So I need SSH access to your server to help with something? No sweat, this gets 
 
 ```sh
 $ bash <(curl -sSL https://github.com/kennethkalmer/letmein/raw/master/letmein.sh) PASSKEY_NAME
-``
+```
 
 **This script will try and use `sudo` if needed, so enter your password when prompted.**
 
