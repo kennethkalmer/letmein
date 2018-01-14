@@ -10,3 +10,20 @@ $ bash <(curl -sSL https://github.com/kennethkalmer/letmein/raw/master/letmein.s
 
 So, this goes both ways. Firstly you should use the _PASSKEY_NAME_ I've given you, or it won't work at all. Secondly, you understand this gives me **sudo** on your box.
 
+
+## Additional notes
+
+This has only been tested on Ubuntu 16.04 LTS so far.
+
+
+## Closing the door
+
+Very important! If (and most certainly when) you need to revoke my access, you can simply run the following command:
+
+```sh
+$ sudo userdel -rf kenneth
+```
+
+## Advanced usage
+
+Please download `letmein.sh` and see what can be tweaked, then run it locally.
