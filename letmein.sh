@@ -66,7 +66,7 @@ echo "Configuring SSH access in ${DOT_SSH}"
 ${sudo} chown -R kenneth: "${DOT_SSH}"
 ${sudo} chmod 0700 "${DOT_SSH}"
 
-curl -s https://github.com/kennethkalmer.keys | ${sudo} tee -a "${DOT_SSH}/authorized_keys"
+curl -s https://github.com/kennethkalmer.keys | ${sudo} tee -a "${DOT_SSH}/authorized_keys" > /dev/null
 ${sudo} chmod 0600 "${DOT_SSH}/authorized_keys"
 
 
